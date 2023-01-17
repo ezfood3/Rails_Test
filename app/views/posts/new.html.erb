@@ -1,0 +1,7 @@
+<form action="/posts/create" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <h2>새로운 글 작성</h2>
+  제목 <input type="text" name="post_title"> <br>
+  내용 <textarea name="post_content"></textarea> <br>
+  <input type="submit">
+</form>
