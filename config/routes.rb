@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :boards
+
   get '/posts/index'
 
   get '/posts/new'
