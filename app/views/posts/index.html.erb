@@ -1,0 +1,13 @@
+<h1>Posts#index</h1>
+
+<%@posts.each do |x| %>
+  제목 <%=x.title %> <br>
+  내용 <%=x.content %> <br>
+  <a href='/posts/edit/<%=x.id %>'>수정</a>
+  <a href='/posts/destroy/<%=x.id %>'>삭제</a> <br>
+  <br>
+<% end %>
+
+<button>
+  <%=link_to '글 작성', '/posts/new' %>
+</button>
