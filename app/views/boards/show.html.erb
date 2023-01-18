@@ -8,3 +8,12 @@
 
   <%= button_to "Destroy this board", @board, method: :delete %>
 </div>
+
+<h3>Comments</h3>
+  <div id="comments">
+    <%= render @board.comments %>
+  </div>
+
+  <div>
+    <%= render 'comments/new', board: @board %>
+  </div>
