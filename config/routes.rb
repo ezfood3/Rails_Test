@@ -4,6 +4,9 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  get '/',to:'home#index'
+  post '/',to:'home#index'
+
   get '/posts/index'
 
   get '/posts/new'
